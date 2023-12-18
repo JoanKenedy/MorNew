@@ -11,13 +11,23 @@
 </head>
 <body>
   <header class="header" id="header">
-    <img src="img/logo/mor.svg" alt="">
+    <img src="img/logo/mor.svg" alt="" id="logo">
     <div class="btn-menu">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </header>
+  <nav class="menu-movil">
+    <i class="bi bi-x-lg" id="close"></i>
+    <a href="/">Inicio</a>
+    <a href="#">Nosotros</a>
+    <a href="#">Servicios</a>
+    <a href="#">Promociones</a>
+    <a href="#Testimonios">Testimonios</a>
+    <a href="#Ubicacion">Ubicación</a>
+    <a href="tel:">623</a>
+  </nav>
   <div class="swiper sample-slider">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -29,7 +39,7 @@
         <h2>Tecnología Avanzada</h2>
       </div>
       <div class="swiper-slide">
-        <img src="img/Slider/_MG_1400.jpg">
+        <img src="img/Slider/slider-3.jpg">
         <h2>Sonrisas Únicas</h2>
       </div>
     </div>
@@ -47,14 +57,14 @@
       <p>Es la Especialidad de la odontología que se encarga de la restauración definitiva de las piezas dentales para devolverle su función estética y armonía.</p>
     </div>
     <div class="item-servicios">
-      <img src="img/implante.jpg" alt="">
+      <img src="img/estetica.jpg" alt="">
       <h3>Estética Dental</h3>
       <p>Es la especialidad odontológica que tiene como objetivo no solo mejorar los dientes y encías, sino que los cambios realizados se integren con el resto de rasgos faciales del paciente.</p>
     </div>
     <div class="item-servicios">
-      <img src="img/implante.jpg" alt="">
-      <h3>Armonía Orofacial</h3>
-      <p>La Armonización Orofacial es un coniunto de procedimientos terapéuticos estéticos que tienen por obietivo armonizar estética y funcionalmente la boca y la cara.</p>
+      <img src="img/ortodoncia.jpg" alt="">
+      <h3>Ortodoncia</h3>
+      <p>Mejoramos su sonrisa usando los brackets metálicos, estéticos o los de microcristales de zafiro, que ofrecen mayor estética.</p>
     </div>
     <a href="" class="btn-casos">Casos de Éxito</a>
   </section>
@@ -73,16 +83,16 @@
   </section>
   <section class="counter">
     <div class="item-counter">
-      <div>
+      <div class="contador">
         <i class="bi bi-emoji-smile"></i>
-        <h2>50000</h2>
+        <h2 class="count_amount" data-cantidad-total="40000">0</h2>
       </div>
       <p>Sonrisas Creadas</p>
     </div>
     <div class="item-counter">
       <div>
         <i class="bi bi-person-circle"></i>
-        <h2>1000</h2>
+        <h2 class="count_amount" data-cantidad-total="1000">0</h2>
       </div>
       <p>Clientes Satisfechos</p>
     </div>
@@ -185,28 +195,77 @@
     </section>
   </div>
   <section class="contacto">
-    <div>
-      <h4>SONRISAS</h4>
-      <h3>Casos de Éxito</h3>
+    <div class="texto-contacto">
+      <h4>CONTÁCTANOS</h4>
+      <h3>Información de Contacto</h3>
       <span></span>
-      <p>Estos son algunos de nuestros resultados</p>
+      <p>Puedes ubicarnos o contactarnos en la siguiente dirección y teléfono para recibir una atención especializada:</p>
     </div>
-    <div>
+    <a class="container-datos" href="#">
       <i class="bi bi-phone"></i>
       <h5>Líneas de Atención</h5>
-      <h2></h2>
+      <h2>556255890381</h2>
+    </a>
+    <a class="container-datos" href="#">
+      <i class="bi bi-pin-map"></i>
+      <h5>Ubicación</h5>
+      <h2>Calle 10 de, 5 de Mayo 2468, Progreso, 31550 Cuauhtémoc, Chih.</h2>
+    </a>
+    <a class="container-datos" href="#">
+      <i class="bi bi-clock"></i>
+      <h5>Horario</h5>
+      <ul>
+        <li>Lunes a Viernes: <br>10:00 - 14:00 <br> 15:00 - 19:00 </li>
+        <li>Sábado: 10:00 - 14:00</li>
+        <li>Domingo: Cerrado</li>
+      </ul>
+    </a>
+    <!-- Swiper -->
+  <div class="swiper-container-1">
+    <div class="swiper consultorio">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/Slider/slider-c1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Slider/slider-c2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Slider/slider-c3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Slider/slider-c4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Slider/slider-c5.jpg" alt="">
+        </div>
+      </div>
     </div>
-    <div>
-      <i class="bi bi-phone"></i>
-      <h5>Líneas de Atención</h5>
-      <h2></h2>
-    </div>
-    <div>
-      <i class="bi bi-phone"></i>
-      <h5>Líneas de Atención</h5>
-      <h2></h2>
-    </div>
+  </div>
   </section>
+  <footer class="footer">
+    <a href="https://www.facebook.com/morcentrodental?locale=es_LA" target="_blank" class="item-rs">
+      <i class="bi bi-facebook"></i>
+      <h5>Síguenos en</h5>
+      <h2>Facebook</h2>
+    </a>
+    <a href="https://www.instagram.com/mor_centro_dental?igshid=YTQwZjQ0NmI0OA==" target="_blank" class="item-rs">
+      <i class="bi bi-instagram"></i>
+      <h5>Síguenos en</h5>
+      <h2>Instagram</h2>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=526255890381" target="_blank" class="item-rs">
+      <i class="bi bi-whatsapp"></i>
+      <h5>Escríbenos</h5>
+      <h2>WhatsApp</h2>
+    </a>
+  </footer>
+  <footer class="footer-1">
+    <p>© 2023 - Todos los derechos reservados Mör Clínica Dental. 
+      Desarrollado por agencia de marketing 
+      <a href="http://dentarios.com.mx" target="_blank" rel="noopener noreferrer">Dentarios</a>
+    </p>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>
