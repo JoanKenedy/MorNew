@@ -169,3 +169,10 @@ menucon.addEventListener('click', function () {
   whats.classList.toggle('show-whats')
   tel.classList.toggle('show-tel')
 })
+
+const links = document.querySelectorAll('.menu-movil')
+links.forEach(element => {
+  element.addEventListener('click', () => {
+    menu.classList.remove('show-menu')
+  })
+})
