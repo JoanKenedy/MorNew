@@ -4,6 +4,7 @@
   --primary-color: #2A2F35;
   --secondary-color: #999999;
   --tercer-color: rgb(0, 0, 100);
+  --blue-mor: #05a8f4;
 }
 
 /*Promociones*/
@@ -63,13 +64,16 @@
   transition: all 0.275s linear;
   text-decoration: none;
 }
+.more-info strong {
+  font-size: 20px;
+}
 .button {
   height: 50px;
   width: 200px;
   position: relative;
   background-color: transparent;
   cursor: pointer;
-  border: 2px solid #252525;
+  border: 2px solid var(--blue-mor);
   overflow: hidden;
   border-radius: 30px;
   color: #333;
@@ -86,7 +90,7 @@
   left: 0;
   top: 0;
   transition: all 0.5s ease-in-out;
-  background-color: #333;
+  background-color: var(--blue-mor);
   border-radius: 30px;
   visibility: hidden;
   height: 10px;
@@ -94,7 +98,7 @@
   z-index: -1;
 }
 .button:hover {
-  box-shadow: 1px 1px 200px #252525;
+  box-shadow: 1px 1px 200px var(--blue-mor);
   color: #fff;
   border: none;
 }
@@ -113,7 +117,8 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-content: center;
-  gap: 20px;
+  row-gap: 60px;
+  column-gap: 30px;
   max-width: 1200px;
 }
 .promociones .promociones-grid .item-promociones {
@@ -125,6 +130,12 @@
 .promociones .promociones-grid .item-promociones img {
   width: 100%;
   margin-bottom: 20px;
+  box-shadow: 10px 10px 15px 3px #8c8c8c;
+  transition: all 0.275s ease-in;
+}
+.promociones .promociones-grid .item-promociones img:hover {
+  transition: all 0.275s ease-in;
+  transform: rotate(5deg) scale(1.05);
 }
 .faq {
   display: flex;
@@ -133,6 +144,11 @@
   flex-direction: column;
   max-width: 1200px;
   padding: 20px 1rem;
+  width: 100%;
+}
+.faq h2 {
+  color: white;
+  margin-bottom: 15px;
 }
 .faq details {
   color: white;
@@ -141,4 +157,49 @@
   border-radius: 20px;
   margin: 10px 0;
   font-size: 14px;
+  width: 100%;
+}
+.faq p {
+  margin-top: 15px;
+  color: #dbdbdb;
+}
+/*Media quieres*/
+@media (min-width: 768px) {
+  .more-info h1 {
+    font-size: 35px;
+  }
+  .more-info p {
+    font-size: 20px;
+  }
+  .more-info strong {
+    font-size: 30px;
+  }
+  .container-parallax {
+    max-width: 500px;
+  }
+  .promociones .promociones-grid {
+    grid-template-columns: repeat(2, minmax(300px, 450px));
+  }
+  .faq details {
+    width: 100%;
+  }
+  #parallax {
+    background-size: contain;
+    background-repeat: repeat;
+  }
+  .faq h2 {
+    font-size: 30px;
+  }
+  .more-info .btn-mas-info button {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .promociones .promociones-grid {
+    grid-template-columns: repeat(3, minmax(300px, 400px));
+    row-gap: 70px;
+    column-gap: 40px;
+  }
 }

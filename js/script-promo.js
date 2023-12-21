@@ -39,3 +39,13 @@ window.onscroll = function() {
     bg.classList.remove('header-blanco')
   }
 }
+
+const swiper = new Swiper('.sample-slider-3', {
+  slidesPerView: 2,           //column count of shown slide
+  spaceBetween: 10,  
+  loop: true,                         //loop
+  autoplay: {                         //autoplay
+    delay: 1500,  
+    disableOnInteraction: false,
+  },          //gap of slides         
+})

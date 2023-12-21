@@ -422,6 +422,7 @@ p {
 .item-testimonios {
   padding: 40px 40px 30px;
   background-color: white;
+  height: auto !important;
 }
 .item-testimonios img {
   width: 75px;
@@ -430,7 +431,7 @@ p {
   margin: 30px 0;
 }
 .item-testimonios h3 {
-  padding: 25px 30px;
+  padding-top: 20px;
 }
 .swiper-pagination-bullet {
   width: 25px !important;
