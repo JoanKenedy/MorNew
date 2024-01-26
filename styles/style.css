@@ -307,19 +307,19 @@ p {
   transition: all 0.275s linear;
 }
 .detalles .parte-1 {
-  background-image: url(../img/_MG_1470.jpg);
+  background-image: url(../img/_MG_1470.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 .detalles .parte-2 {
-  background-image: url(../img/_MG_1325.jpg);
+  background-image: url(../img/_MG_1325.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 .detalles .parte-3 {
-  background-image: url(../img/_MG_1418.jpg);
+  background-image: url(../img/_MG_1418.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -369,7 +369,7 @@ p {
 /*Fin Estilos Galería*/
 /*Estilos TEstimonios*/
 .container-testimonios {
-  background-image: url(../img/Slider/_MG_1489.jpg);
+  background-image: url(../img/Slider/_MG_1489.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
