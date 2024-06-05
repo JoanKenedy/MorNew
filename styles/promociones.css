@@ -198,7 +198,7 @@
 }
 @media (min-width: 1024px) {
   .promociones .promociones-grid {
-    grid-template-columns: repeat(3, minmax(300px, 400px));
+    grid-template-columns: repeat(4, minmax(300px, 400px));
     row-gap: 70px;
     column-gap: 40px;
   }
